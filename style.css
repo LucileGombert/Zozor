@@ -1,0 +1,321 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-image: url('images/fond_jaune.png');
+	font-family: Trebuchet MS, Arial;
+	
+}	
+/*Head*/
+
+#page
+{
+	max-width: 900px;
+	margin: auto; 
+}
+
+#en_tete
+{
+	display: flex;
+	justify-content: space-between;
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	
+}
+header h1
+{
+	font-family: 'BallparkWeiner', Arial;
+	font-size: 2.5em;
+	font-style: normal;
+	font-weight: normal;
+	margin-top: 0.2em;
+	margin-bottom: 0;
+}
+
+h2
+{
+	font-family: Dayrom, Arial;
+	font-size: 1.1em;
+	font-weight: normal;
+	
+}
+
+header h2
+{
+	margin: 0;
+}
+#navigation
+{
+	font-family: Dayrom;
+	font-size: 1.3em;
+}
+
+#navigation li 
+{
+	list-style-type: none;
+	display: inline;
+	padding: 6px;
+}
+
+#navigation li a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+#navigation li a:hover
+{
+	text-decoration: none;
+	border-bottom: 3px solid;
+	color: rgb(118, 0, 1);
+}
+
+.liseret
+{
+	width: 100%;
+	height: 4px;
+	background-repeat: repeat-x;
+}
+
+/*Body*/
+
+.banniere
+{
+	width: 100%;
+	border-radius: 7px;
+	box-shadow: 1px 3px 5px  black;
+	margin-top: 10px;
+	position: relative;
+}
+.banniere_sanfrancisco
+{
+	position: relative;
+}
+#legende_banniere
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;      
+	width: 100%;
+	height: 50px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background: rgba(0, 0, 0, 0.50);
+   	color: white;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.img_bouton
+{
+	position: relative;
+	top: -27px;
+	width: 120px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#texte_bouton
+{
+	background-color: #760001;
+	/* padding: 10px 20px; */
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	height: 40px;
+	width: 130px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+section 
+{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section h1
+{
+	font-family: Dayrom;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+section p
+{
+	font-size: 0.8em;
+}
+
+#titre_article
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.epingle
+{
+	margin-right: 5px;
+	width: 42px;
+	height: 48px;
+}
+
+article
+{
+	width: 68px;
+	min-width: 68%;
+	text-align: justify;
+}
+
+aside
+{
+	background-color: #706b64; 
+	border-radius: 5px;
+	box-shadow: 1px 4px 7px  black;
+	padding: 10px;
+	text-align: justify;
+	color: white;
+	position: relative;
+	width: 250px;
+}
+
+aside p
+{
+	font-size: 0.9em;
+}
+
+.zozor
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px black solid;
+}
+
+#bulle
+{
+	position:absolute;
+	left: -12px;
+	top: 90px;
+}
+
+#reseaux 
+{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+#liseret_bas
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*Footer*/
+
+footer
+{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+footer h1
+{
+	font-family: Dayrom;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+footer p
+{
+	font-size: 0.8em;
+}
+
+#mes_photos
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+#mes_photos img
+{
+	margin: 1.8px;
+	border: 1px black solid;
+}
+
+#mes_amis
+{
+	font-size: 0.8em;
+	color: #760001;
+	display: flex;
+	margin-right: 40px;
+}
+#mes_amis ul {
+	padding: 0 1rem 0 1rem;
+}
+
+#mes_amis li a
+{
+	text-decoration: none;
+	color: #760001;
+	display: list-item;
+	list-style-image: url('images/ico_liensexterne.png');
+}
+
+@media all and (max-width: 583px)
+{
+	/* Rédigez vos propriétés CSS ici */
+	header
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav
+	{
+		margin-top: 30px;
+	}
+}
+
